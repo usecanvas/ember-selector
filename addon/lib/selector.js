@@ -66,7 +66,7 @@ export default Ember.Object.extend({
     for (var i = 0, len = pointTypes.length; i < len; i++) {
       var pointType = pointTypes[i];
       var $node     = Ember.$(selection[pointType + 'Node']);
-      var offset    = Ember.$(selection[pointType + 'Offset']);
+      var offset    = selection[pointType + 'Offset'];
       selections.push([$node, offset]);
     }
 
