@@ -1,6 +1,6 @@
 {
   "name": "ember-selector",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "An Ember addon for managing the user's selection",
   "directories": {
     "doc": "doc",
