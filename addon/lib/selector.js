@@ -11,7 +11,7 @@ export default Ember.Object.extend({
    */
   $anchor: function get$anchor() {
     return Ember.$(this.get('selection.anchorNode'));
-  }.property('selectionState'),
+  }.property().volatile(),
 
   /**
    * The focus node for the selection
@@ -19,7 +19,7 @@ export default Ember.Object.extend({
    */
   $focus: function get$focus() {
     return Ember.$(this.get('selection.focusNode'));
-  }.property('selectionState'),
+  }.property().volatile(),
 
   /**
    * The `Document` whose selection this object interacts with
